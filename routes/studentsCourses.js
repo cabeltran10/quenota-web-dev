@@ -17,7 +17,7 @@ router.get("/", (req, res) => {
 router.get("/:id", getStudentCourse, (req, res) => {
   res.json(res.studentCourse);
 });
-
+/* To avoid bugs you should try to make more explicit REST urls's */
 // Creating one
 router.post("/", (req, res) => {
   req.db.collection("studentsCourses").insert(req.body, (err, result) => {
