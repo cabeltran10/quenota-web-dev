@@ -37,6 +37,8 @@ class Course extends React.Component {
       _id: pId
     });
   }
+  
+  /* Podrian comentar mas, queda dificil entender la funcion de esto */
   estadisticas() {
     let notas = this.state.grades;
     let promedio = 0;
@@ -270,7 +272,8 @@ class Course extends React.Component {
       );
     }
   }
-
+/* SOn metodos increiblemente largos. Intenten lograr algo de granularidad en los metodos. Utilizando funciones auxiliares. 
+Ademas no deberian dejar los console.log() para el producto final */
   editCourse(id) {
     console.log("EDITAR", id);
     let arreglo = this.state.grades;
